@@ -8,9 +8,7 @@
 # Модель данных
 ![image](https://github.com/sevibogdanov/AW_contest_dash/assets/130535023/464feefe-b0a4-4929-9cdb-06fc08e3b30c)
 <details>
-
 <summary>Код fact</summary>
-
 ```sql
    with cte as (select 
     `ПЕРИОД`,
@@ -49,9 +47,12 @@ select *,
     dense_rank() over(order by `SOLD_TOTAL_PER_EMPLOYEE` desc) emp_rank_total
 from cte2
 ```
+</details>    
+<details>
+<summary>Код plan</summary>
+```sql
 
-</details>  
-
+```
 
 # Вкладка - план-факт
 # Вкладка - рейтинг сотрудников
