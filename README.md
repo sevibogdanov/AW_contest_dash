@@ -9,6 +9,10 @@
 ![image](https://github.com/sevibogdanov/AW_contest_dash/assets/130535023/464feefe-b0a4-4929-9cdb-06fc08e3b30c)
 <details>
 <summary>Код fact</summary>
+```ruby
+   puts "Hello World"
+```
+   
 ```
    sql
    with cte as (select 
