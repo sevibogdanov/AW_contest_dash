@@ -9,7 +9,7 @@
 ![image](https://github.com/sevibogdanov/AW_contest_dash/assets/130535023/464feefe-b0a4-4929-9cdb-06fc08e3b30c)
 <details>   
 <summary><b>Код fact</b></summary>   
-![image](https://github.com/sevibogdanov/AW_contest_dash/assets/130535023/531f3477-027b-4bab-87ea-0d5c599a5a29)
+```test```
 </details>   
 
 
