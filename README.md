@@ -188,10 +188,7 @@ dense_rank() over(partition by `ПЕРИОД`,`РЕГИОН` order by `SOLD_TOTA
 - используется оконная функция внутри виджета для подсчета топа по факту продаж  
 ```RANK_DENSE(sum([prodano__rub]), desc total)```
 - используется оконная функция внутри виджета для подсчета топа по выполнению своего плана (корректнее для отображения качества работы сотрудника, так как ситуация по регионам отличается)  
-```RANK_DENSE(
-sum([prodano__rub]) /
-(SUM_IF([plan],[filter_for_plan_emp]=1)
-/max([empl_per_region])),desc total)```
+```RANK_DENSE(sum([prodano__rub]) / (SUM_IF([plan],[filter_for_plan_emp]=1) / max([empl_per_region])),desc total)```  
 
 # Вкладка - детальный анализ сотрудников
 # Вкладка - структура продаж
