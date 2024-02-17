@@ -45,9 +45,11 @@ select *,
     dense_rank() over(partition by `ПЕРИОД`,`РЕГИОН` order by `SOLD_WITHIN_MONTH_PER_EMPLOYEE` desc) emp_rank_within_month_and_region,
     dense_rank() over(partition by `ПЕРИОД` order by `SOLD_WITHIN_MONTH_PER_EMPLOYEE` desc) emp_rank_within_month_total,
     dense_rank() over(order by `SOLD_TOTAL_PER_EMPLOYEE` desc) emp_rank_total
-from cte2
-```
-</details>    
+from cte2  
+   
+```  
+</details>
+
 <details>
 <summary>Код plan</summary>
 ```sql
