@@ -10,6 +10,7 @@
 
 <details>
 <summary>Код fact</summary>
+   
 ```ruby
    puts "Hello World"
 ```
