@@ -47,13 +47,6 @@ select *,
     dense_rank() over(order by `SOLD_TOTAL_PER_EMPLOYEE` desc) emp_rank_total
 from cte2  
    
-```  
-</details>
-
-<details>
-<summary>Код plan</summary>
-```sql
-
 ```
 
 # Вкладка - план-факт
