@@ -7,9 +7,9 @@
 
 # Модель данных
 ![image](https://github.com/sevibogdanov/AW_contest_dash/assets/130535023/464feefe-b0a4-4929-9cdb-06fc08e3b30c)
-<details>
-<summary><b>Код fact</b></summary>
-```
+<details>   
+<summary><b>Код fact</b></summary>   
+```   
 with cte as (select 
     `ПЕРИОД`,
     `РЕГИОН`,
@@ -43,8 +43,8 @@ dense_rank() over(partition by `ПЕРИОД`,`РЕГИОН` order by `SOLD_TOTA
 dense_rank() over(partition by `ПЕРИОД`,`РЕГИОН` order by `SOLD_WITHIN_MONTH_PER_EMPLOYEE` desc) emp_rank_within_month_and_region,
 dense_rank() over(partition by `ПЕРИОД` order by `SOLD_WITHIN_MONTH_PER_EMPLOYEE` desc) emp_rank_within_month_total,
 dense_rank() over(order by `SOLD_TOTAL_PER_EMPLOYEE` desc) emp_rank_total
-from cte2```
-</details>
+from cte2```   
+</details>   
 
 
 # Вкладка - план-факт
