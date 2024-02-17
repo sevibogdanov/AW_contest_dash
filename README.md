@@ -44,7 +44,7 @@ select *,
     dense_rank() over(partition by `ПЕРИОД`,`РЕГИОН` order by `SOLD_TOTAL_PER_EMPLOYEE` asc) - 1 empl_per_region, --уникальное кол-во работников на реион
     dense_rank() over(partition by `ПЕРИОД`,`РЕГИОН` order by `SOLD_WITHIN_MONTH_PER_EMPLOYEE` desc) emp_rank_within_month_and_region,
     dense_rank() over(partition by `ПЕРИОД` order by `SOLD_WITHIN_MONTH_PER_EMPLOYEE` desc) emp_rank_within_month_total,
-    dense_rank() over(order by `SOLD_TOTAL_PER_EMPLOYEE` desc) emp_rank_total
+    dense_rank() over(order by `SOLD_TOTAL_PER_EMPLOYEE` desc) emp_rank_total  
 ```
 </details>
 
