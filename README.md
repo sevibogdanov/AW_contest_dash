@@ -1,3 +1,5 @@
+Страница конкурса (1 место) https://analyticworkspace.ru/tpost/kzi80mbx01-podvedeni-itogi-konkursa-dashbordov-aw-b
+
 # Структура
 [Модель данных](#Модель-данных)  
 [Вкладка "план-факт"](#Вкладка---план-факт)  
